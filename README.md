@@ -6,8 +6,8 @@ This visualisation is going to be an interactive map of a popular route through 
 
 ## Prerequisites
 ##### Data source
-Climate data: https://www.timeanddate.com/weather/peru/lima/climate
-Euro vs. foreign currencies: http://www.xe.com/currency/eur-euro
+- Climate data: https://www.timeanddate.com/weather/peru/lima/climate
+- Euro vs. foreign currencies: http://www.xe.com/currency/eur-euro
 
 ##### External components
 Google API for map: https://developers.google.com/maps/documentation/javascript/
@@ -15,7 +15,8 @@ Google API for map: https://developers.google.com/maps/documentation/javascript/
 ##### Review of similar visualizations
 - Add cities using Google API and d3: https://bl.ocks.org/mbostock/raw/899711/
 - Overlay map on google map for interactive d3 elements: http://www.bmdata.co.uk/effective/index_map.html
-- More on svg overaly element: 
+- More on svg overaly element:
+- How to create a route: https://stackoverflow.com/questions/27341214/how-to-draw-a-route-between-two-markers-in-google-maps
 
 ##### Possible technical problems or limitations
 - scrapping data for all cities
