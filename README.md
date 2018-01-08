@@ -4,7 +4,7 @@ Over the last few years, South-America has become a popular traveling destinatio
 
 ## Solution
 
-![alt text](doc/GeneralIdea.png "General Idea For Project Proposal")
+![alt text](Doc/GeneralIdea.png "General Idea For Project Proposal")
 
 This visualisation is going to be an interactive map of a popular route through South-America. This maps allows for interactive information on clicking a city / place on the route. The information will help a traveller make a desicion on the best time to visit the city, how much money to bring and how touristy the place is.
 
