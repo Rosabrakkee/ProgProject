@@ -19,7 +19,7 @@ Google API for map: https://developers.google.com/maps/documentation/javascript/
 ##### Review of similar visualizations
 - Add cities using Google API and d3: https://bl.ocks.org/mbostock/raw/899711/
 - Overlay map on google map for interactive d3 elements: http://www.bmdata.co.uk/effective/index_map.html
-- More on svg overaly element:
+- More on svg overlay element:
 - How to create a route: https://stackoverflow.com/questions/27341214/how-to-draw-a-route-between-two-markers-in-google-maps
 
 ##### Possible technical problems or limitations
