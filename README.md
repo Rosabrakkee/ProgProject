@@ -4,7 +4,7 @@ Over the last few years, South-America has become a popular traveling destinatio
 
 ## Solution
 
-![alt text](Doc/GeneralIdea.png "General Idea For Project Proposal")
+![alt text](doc/GeneralIdea.png "General Idea For Project Proposal")
 
 This visualisation is going to be an interactive map of a popular route through South-America. This maps allows for interactive information on clicking a city / place on the route. The information will help a traveller make a desicion on the best time to visit the city, how much money to bring and how touristy the place is.
 
@@ -23,6 +23,6 @@ Google API for map: https://developers.google.com/maps/documentation/javascript/
 - How to create a route: https://stackoverflow.com/questions/27341214/how-to-draw-a-route-between-two-markers-in-google-maps
 
 ##### Possible technical problems or limitations
-- scrapping data for all cities
+- Scrapping data for all cities
 - Interactive elements on click
 - Adding route to the map
