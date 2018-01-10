@@ -14,7 +14,7 @@ This visualisation is going to be an interactive map of a popular route through 
 - Euro vs. foreign currencies: http://www.xe.com/currency/eur-euro
 
 ##### External components
-Google API for map: https://developers.google.com/maps/documentation/javascript/
+- Google API for map: https://developers.google.com/maps/documentation/javascript/
 
 ##### Review of similar visualizations
 - Add cities using Google API and d3: https://bl.ocks.org/mbostock/raw/899711/
