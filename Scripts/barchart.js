@@ -7,6 +7,8 @@
  * Barchart was inspired by: http://bl.ocks.org/Jverma/887877fc5c2c2d99be10
  **/
 function makeGraph(data) {
+  console.log("THE GRAPH")
+
 
     // create canvas sizes
     var padding = {
@@ -34,7 +36,7 @@ function makeGraph(data) {
         .ticks(10);
 
     // create the SVG element to html page
-    var svg2 = d3.select("body").append("svg")
+    var svg2 = d3.select("#graph1")
         .attr("id", "barchart")
         .attr("width", width + padding.left + padding.right)
         .attr("height", height + padding.top + padding.bottom)

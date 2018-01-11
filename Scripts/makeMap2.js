@@ -14,8 +14,37 @@
 //     addMarker({coords:event.latLng});
 //     // addRoute();
 //   });
+// console.log(d3.select("#graph1"))
+
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+
+    if (this.readyState == 4 && this.status == 200) {
+      console.log("hallo")
+       // Typical action to be performed when the document is ready:
+       // console.log(xhttp.responseText);
+    }
+};
+xhttp.open("GET", "http://dataservice.accuweather.com/currentconditions/v1/335315/historical/24?apikey=IY29tJKmi0AcdoT10PEZezZojy58kQ3W&language=en-us&details=true", true);
+// xhttp.open("GET", "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=IY29tJKmi0AcdoT10PEZezZojy58kQ3W&q=-19.03332%2C-65.26274&language=en-us&details=true&toplevel=true", true);
+
+console.log("hallo2")
+xhttp.send();
+
+// var directionsDisplay;
+// directionsService = new google.maps.DirectionsService();
+// var map;
+
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+console.log("hier directions")
+var map;
 
     function initMap() {
+
+
+
       console.log("test")
                directionsDisplay = new google.maps.DirectionsRenderer();
                var Sucre = new google.maps.LatLng(-19.03332, -65.26274);
@@ -29,7 +58,7 @@
                calcRoute();
            }
 
-           function calcRoute() {
+           function calcRoute(directionsService) {
                var first = new google.maps.LatLng(-19.03332, -65.26274);
                var second = new google.maps.LatLng(42.496401, -124.413126);
 

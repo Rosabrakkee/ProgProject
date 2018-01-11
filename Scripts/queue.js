@@ -8,13 +8,14 @@
 
  // load the data and start making the map
 window.onload = function() {
+  console.log("the queue")
     queue()
-        .defer(d3.json, "Data/weatherData.json")
+        .defer(d3.json, "Data/oldfile.json")
         .defer(d3.json, "Data/weatherData.json")
         .await(makePage);
 
     function makePage(error, data1, data2) {
         if (error) throw error;
-        makeBarchart(data1, data2);
+        makeGraph(data1);
     };
 };
