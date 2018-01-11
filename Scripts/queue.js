@@ -9,12 +9,12 @@
  // load the data and start making the map
 window.onload = function() {
     queue()
-        .defer(d3.json, "Data/populatie.json")
-        .defer(d3.json, "Data/inkomen.json")
+        .defer(d3.json, "Data/weatherData.json")
+        .defer(d3.json, "Data/weatherData.json")
         .await(makePage);
 
     function makePage(error, data1, data2) {
         if (error) throw error;
-        makeMap(data1, data2);
+        makeBarchart(data1, data2);
     };
 };
