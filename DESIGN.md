@@ -4,6 +4,7 @@
 
 ## External sources
 - Euro vs. foreign currencies: http://www.xe.com/currency/eur-euro
+- Lng Lat: http://itouchmap.com/latlong.html
 
 ## Technical components
 ### Interactive components
