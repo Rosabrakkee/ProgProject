@@ -72,7 +72,7 @@ function makeGraph2(data) {
 
     // create the SVG element to html page
     var svg2 = d3.select("#graph2")
-        .attr("id", "barchart")
+        .attr("id", "linechart")
         .attr("width", width + padding.left + padding.right)
         .attr("height", height + padding.top + padding.bottom)
         .append("g")
@@ -145,7 +145,7 @@ function makeGraph2(data) {
 
       }
       function dollarGraph(){
-        
+
       }
 
     // // Add the bars to the chart and add the mouse hover element
