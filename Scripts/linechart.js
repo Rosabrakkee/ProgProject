@@ -24,7 +24,20 @@ function makeGraph2(data) {
      {"month":"November","currency":"8.331"},
      {"month":"December","currency":"8.338"}
    ]
-   console.log(data)
+   var  data2 = [
+      {"month":"January","currency":"6.954"},
+      {"month":"Februari","currency":"6.334"},
+      {"month":"Maart","currency":"6.344"},
+      {"month":"April","currency":"6.354"},
+      {"month":"Mei","currency":"6.354"},
+      {"month":"Juni","currency":"6.364"},
+      {"month":"Juli","currency":"6.324"},
+      {"month":"August","currency":"6.334"},
+      {"month":"September","currency":"6.344"},
+      {"month":"Oktober","currency":"6.333"},
+      {"month":"November","currency":"6.331"},
+      {"month":"December","currency":"6.338"}
+    ]
 
 
     // create canvas sizes
@@ -127,6 +140,13 @@ function makeGraph2(data) {
       svg2.append("path")
           .attr("class", "line")
           .attr("d", valueline(data));
+
+      function euroGraph(){
+
+      }
+      function dollarGraph(){
+        
+      }
 
     // // Add the bars to the chart and add the mouse hover element
     // svg2.selectAll("barchart")

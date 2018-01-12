@@ -126,7 +126,7 @@ Rosa Brakkee
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>SouthAmerica Travel Info</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -204,11 +204,35 @@ Rosa Brakkee
     </div>
     <div class="col-xs-6">
       <div class="row">
+        <div id="option">
+        <input name="updateButton"
+               type="button"
+               value="Temperature"
+               style="float: right;"
+               onclick="updateData()" />
+        <input name="revertButton"
+               type="button"
+               value="Rainfall"
+               style="float: right;"
+               onclick="revertData()" />
+        </div>
       <svg id="graph1" width="700" height="700">
         <!-- <rect width="650" height="300" style="fill:rgb(255,255,255);stroke-width:3;stroke:rgb(0,0,0)" /> -->
       </svg>
     </div>
     <div class="row">
+      <div id="option">
+      <input name="updateButton"
+             type="button"
+             value="Euro"
+             style="float: right;"
+             onclick="updateData()" />
+      <input name="revertButton"
+             type="button"
+             value="Dollar"
+             style="float: right;"
+             onclick="revertData()" />
+      </div>
     <svg id="graph2" width="700" height="350">
       <!-- <rect width="650" height="300" style="fill:rgb(255,255,255);stroke-width:3;stroke:rgb(0,0,0)" /> -->
     </svg>
