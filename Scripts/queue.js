@@ -9,6 +9,8 @@
  // load the data and start making the map
 window.onload = function() {
   makeGraph();
+  makeGraph2();
+
   // console.log("the queue")
   //   queue()
   //       .defer(d3.json, "Data/oldfile.json")
