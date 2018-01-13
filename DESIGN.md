@@ -20,12 +20,12 @@ This visualisation is going to be an interactive map of a popular route through 
 - On toggle [temperature, rainfall] in average temperature graph -> changes the temperature graph in a rainfall graph
 - On toggle [Euro, dollar] in euroconversion graph -> changes the euroconversion graph to a dollarconversion graph
 
-### Functions:
+### Functions
 - Get route on map, using google waypoints
 - Create info window for every CITY
 - Update 2 Graphs for every CITY
 
-## Plugins
+### Plugins
 - google maps api
 - google places api
 - accu weather api
