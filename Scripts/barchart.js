@@ -30,7 +30,7 @@ function makeGraph(data) {
     // create canvas sizes
     var padding = {
           top: 100,
-          right: 20,
+          right: 30,
           bottom: 100,
           left: 40
         },
