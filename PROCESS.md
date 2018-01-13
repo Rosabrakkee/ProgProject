@@ -1,6 +1,6 @@
 # WEEK 1
 ## day 1
-- First general Idea
+- First general idea
 - Github structure
 
 ## day 2
@@ -18,3 +18,6 @@
 - barchart.js
 - linechart.js
 - queue.js
+
+# WEEK 2
+## day 8
