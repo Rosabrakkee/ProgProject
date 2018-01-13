@@ -19,5 +19,7 @@
 - linechart.js
 - queue.js
 
+![alt text](Doc/progress_week1.png "progress1")
+
 # WEEK 2
 ## day 8
