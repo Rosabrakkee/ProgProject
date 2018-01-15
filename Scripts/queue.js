@@ -7,9 +7,10 @@
  **/
 
  // load the data and start making the map
-window.onload = function() {
-  makeGraph();
-  makeGraph2();
+
+
+  // makeGraph();
+  // makeGraph2();
 
   // console.log("the queue")
   //   queue()
@@ -21,4 +22,9 @@ window.onload = function() {
   //       if (error) throw error;
   //       makeGraph(data1);
   //   };
+
+window.onload = function() {
+    makeRainGraph()
+    // makeTempGraph()
+
 };

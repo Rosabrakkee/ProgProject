@@ -1,3 +1,5 @@
+var infoWindow;
+
 function initMap(){
   // Map options
   var options = {
@@ -10,9 +12,12 @@ function initMap(){
 
   // Listen for click on map
   google.maps.event.addListener(map, 'click', function(event){
-    console.log("")
+    if (infoWindow) {
+      console.log("open windows")
+        infoWindow.close();
+    }
     // Add marker
-    addMarker({coords:event.latLng});
+    // addMarker({coords:event.latLng});
     // addRoute();
   });
 
@@ -113,6 +118,7 @@ function initMap(){
   // Array of markers
   var markers = [
     {
+      name:"SantaCruz",
       coords:{lat:-17.7862900,lng:-63.1811700},
       // content:'<h1>Santa Cruz</h1>',
       content: '<div id="content">'+
@@ -137,26 +143,32 @@ function initMap(){
         '</div>'
     },
     {
+      name:"Sucre",
       coords:{lat:-19.03332,lng: -65.26274},
       content:'<h1>Sucre</h1>'
     },
     {
+      name:"La Paz",
       coords:{lat:-16.500093,lng:-68.214684},
       content:'<h1>La Paz</h1>'
     },
     {
+      name:"Uyuni",
       coords:{lat:-20.4596,lng:-66.82503},
       content:'<h1>Uyuni</h1>'
     },
     {
+      name:"Cusco",
       coords:{lat:-13.52264,lng:-71.96734},
       content:'<h1>Cusco</h1>'
     },
     {
+      name:"Arequipa",
       coords:{lat:-16.39889,lng:-71.535},
       content:'<h1>Arequipa</h1>'
     },
     {
+      name:"Lima",
       coords:{lat:-12.046374,lng:-77.042793},
       content:'<h1>Lima</h1>'
     }
@@ -171,6 +183,7 @@ function initMap(){
   // Add Marker Function
   function addMarker(props){
     var marker = new google.maps.Marker({
+      name: props.name,
       position:props.coords,
       map:map,
       //icon:props.iconImage
@@ -188,8 +201,16 @@ function initMap(){
         content:props.content
       });
 
+
+
       marker.addListener('click', function(){
+        if (infoWindow) {
+          console.log("open windows")
+            // infoWindow.close();
+        }
         infoWindow.open(map, marker);
+        setCityInfo(marker.name)
+
       });
     }
   }

@@ -6,28 +6,14 @@
  *
  * Barchart was inspired by: http://bl.ocks.org/Jverma/887877fc5c2c2d99be10
  **/
+
 // var data = "Data/SantaCruz.json"
 
-function makeRainGraph(data) {
+function makeTempGraph(data) {
 
   d3.select("#barchart").remove();
-  console.log("THE RAIN GRAPH")
-  console.log(d3.select("#barchart"))
-  // var  data = [
-  //    {"month":"January","rainfall":"170.0"},
-  //    {"month":"Februari","rainfall":"130"},
-  //    {"month":"Maart","rainfall":"120"},
-  //    {"month":"April","rainfall":"80"},
-  //    {"month":"Mei","rainfall":"100"},
-  //    {"month":"Juni","rainfall":"70"},
-  //    {"month":"Juli","rainfall":"60"},
-  //    {"month":"August","rainfall":"60"},
-  //    {"month":"September","rainfall":"60"},
-  //    {"month":"Oktober","rainfall":"70"},
-  //    {"month":"November","rainfall":"120"},
-  //    {"month":"December","rainfall":"150"}
-  //  ]
-   console.log(data)
+  console.log("THE TEMP GRAPH")
+ console.log(data)
 
 
     // create canvas sizes
@@ -56,7 +42,6 @@ function makeRainGraph(data) {
         .ticks(10);
 
     // create the SVG element to html page
-    // var div = document.getElementById("graph1")
     var svg2 = d3.select("#graph1").append("svg:svg")
         .attr("id", "barchart")
         .attr("width", width + padding.left + padding.right)
@@ -70,7 +55,7 @@ function makeRainGraph(data) {
         .attr("class", "d3-tip")
         .offset([-8, 0])
         .html(function(d) {
-            return Math.round(d.rainfall) + "<strong>mm</strong>"
+            return Math.round(d.temperature) + "<strong>celsius</strong>"
         });
 
     //svg for loading the tooltip
@@ -78,7 +63,7 @@ function makeRainGraph(data) {
 
     data.forEach(function(d) {
         d.month = d.month;
-        d.rainfall = d.rainfall;
+        d.maxTemp = d.maxTemp;
     });
 
     // scale the axis's to the loaded data
@@ -86,7 +71,7 @@ function makeRainGraph(data) {
         return d.month;
     }));
     y.domain([0, d3.max(data, function(d) {
-       return parseInt(d.rainfall)
+       return parseInt(d.maxTemp)
     })]);
 
     // add title to the graph
@@ -95,7 +80,7 @@ function makeRainGraph(data) {
         .attr("y", 0 - (padding.top / 3))
         .attr("text-anchor", "middle")
         .style("font-size", "18px")
-        .text("Average rainfall Santa Cruz, Bolivia");
+        .text("Average Temperature Santa Cruz, Bolivia");
 
     // add Xaxis with months rotated
     svg2.append("g")
@@ -117,7 +102,7 @@ function makeRainGraph(data) {
         .attr("y", -35)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("rainfall (mm)");
+        .text("maxTemp (mm)");
 
     // Add the bars to the chart and add the mouse hover element
     svg2.selectAll("barchart")
@@ -132,10 +117,10 @@ function makeRainGraph(data) {
         })
         .attr("width", x.rangeBand())
         .attr("y", function(d) {
-            return y(d.rainfall);
+            return y(d.maxTemp);
         })
         .attr("height", function(d) {
-            return height - y(d.rainfall);
+            return height - y(d.maxTemp);
         })
         .on("mouseover", tip.show)
         .on("mouseout", tip.hide)

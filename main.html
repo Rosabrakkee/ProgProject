@@ -137,7 +137,9 @@ Rosa Brakkee
   <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
   <script src="Scripts/queue.js"></script>
   <script src="Scripts/barchart.js"></script>
+  <script src="Scripts/barchartTemp.js"></script>
   <script src="Scripts/linechart.js"></script>
+  <script src="Scripts/cityInfo.js"></script>
   <link rel="stylesheet" type="text/css" href="Style/barchart.css">
   <link rel="stylesheet" type="text/css" href="Style/linechart.css">
   <link rel="stylesheet" type="text/css" href="Style/bootstrap.css">
@@ -203,20 +205,20 @@ Rosa Brakkee
       <div id="map"></div>
     </div>
     <div class="col-xs-6">
-      <div class="row">
+      <div id="graph1" class="row">
         <div id="option">
         <input name="updateButton"
                type="button"
                value="Temperature"
                style="float: right;"
-               onclick="updateData()" />
+               onclick= makeTempGraph() />
         <input name="revertButton"
                type="button"
                value="Rainfall"
                style="float: right;"
-               onclick="revertData()" />
+               onclick= makeRainGraph() />
         </div>
-      <svg id="graph1" width="700" height="700">
+      <svg id="barchart" width="700" height="700">
         <!-- <rect width="650" height="300" style="fill:rgb(255,255,255);stroke-width:3;stroke:rgb(0,0,0)" /> -->
       </svg>
     </div>

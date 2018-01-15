@@ -1,0 +1,14 @@
+[
+   {"month":"January","maxTemp":"29", "minTemp":"22"},
+   {"month":"Februari","maxTemp":"30", "minTemp":"22"},
+   {"month":"Maart","maxTemp":"29", "minTemp":"22"},
+   {"month":"April","maxTemp":"27", "minTemp":"20"},
+   {"month":"Mei","maxTemp":"25", "minTemp":"18"},
+   {"month":"Juni","maxTemp":"23", "minTemp":"16"},
+   {"month":"Juli","maxTemp":"24", "minTemp":"16"},
+   {"month":"August","maxTemp":"26", "minTemp":"17"},
+   {"month":"September","maxTemp":"27", "minTemp":"18"},
+   {"month":"Oktober","maxTemp":"30", "minTemp":"21"},
+   {"month":"November","maxTemp":"30", "minTemp":"21"},
+   {"month":"December","maxTemp":"30", "minTemp":"22"}
+ ]
