@@ -209,8 +209,8 @@ function initMap(){
             // infoWindow.close();
         }
         infoWindow.open(map, marker);
-        setCityInfo(marker.name)
-
+        var data = "Data/" + marker.name + ".json"
+        updateGraph(data)
       });
     }
   }

@@ -26,3 +26,6 @@
 - first version for temperature chart for santa cruz data
 - interactive element that links click on the city marker to the weather graphs
 - update graph to rainfall <-> temperature works
+
+## day 9
+- sick :(
