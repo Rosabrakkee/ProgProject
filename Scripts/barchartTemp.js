@@ -10,12 +10,10 @@
 // var data = "Data/SantaCruz.json"
 
 function makeTempGraph(data) {
+d3.select("#barchart").remove();
 
-  d3.select("#barchart").remove();
-  console.log("THE TEMP GRAPH")
- console.log(data)
-
-
+console.log("THE TEMP GRAPH")
+console.log(data)
     // create canvas sizes
     var padding = {
           top: 100,
